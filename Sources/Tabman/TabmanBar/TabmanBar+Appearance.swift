@@ -84,7 +84,7 @@ public extension TabmanBar {
             /// Color of the separator at the bottom of the bar.
             public var bottomSeparatorColor: UIColor?
             /// The image rendering mode for items that have an image
-            public var imageRenderingMode: UIImageRenderingMode?
+            public var imageRenderingMode: UIImage.RenderingMode?
         }
         
         public struct Text {

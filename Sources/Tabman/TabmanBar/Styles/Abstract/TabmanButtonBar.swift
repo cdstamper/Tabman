@@ -62,7 +62,7 @@ internal class TabmanButtonBar: TabmanBar {
     public var color: UIColor = Appearance.defaultAppearance.state.color!
     public var selectedColor: UIColor = Appearance.defaultAppearance.state.selectedColor!
   
-    public var imageRenderingMode: UIImageRenderingMode = Appearance.defaultAppearance.style.imageRenderingMode! {
+    public var imageRenderingMode: UIImage.RenderingMode = Appearance.defaultAppearance.style.imageRenderingMode! {
         didSet {
             guard oldValue != imageRenderingMode else {
                 return
@@ -196,7 +196,7 @@ internal class TabmanButtonBar: TabmanBar {
                 }
                 button.setTitle(title, for: .normal)
                 // Nudge it over a little bit
-                button.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0)
+                button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
             } else if let title = item.title {
                 button.setTitle(title, for: .normal)
             } else if let image = item.image {
